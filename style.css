@@ -1,0 +1,236 @@
+/* General Styles */
+* {
+    background: #E3F2FD;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Main Container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 900px;
+    gap: 40px;
+
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Text Area */
+.text-area, .mensaje {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 15px;
+    border: 2px solid #1E88E5;
+    border-radius: 10px;
+    color: #0A3871;
+    background-color: #FFF;
+    font-size: 18px;
+    resize: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease , border-color 0.3s ease;;
+    text-transform: lowercase;
+}
+
+.text-area:focus, .mensaje:focus {
+    outline: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje {
+    background-image: url('img/Muñeco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px;
+}
+
+.mensaje:focus {
+    background-size: 130px;
+}
+
+::placeholder {
+    color: #A3A3A3;
+}
+
+/* Buttons */
+.botones {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.btn-encriptar, .btn-desencriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover {
+    background-color: #072C5C;
+    transform: translateY(-2px);
+}
+
+.btn-copiar {
+    background-color: white;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+.btn-copiar:hover {
+    background-color: #0A3871;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Botón Limpiar */
+.btn-limpiar {
+    background-color: #FF5252;
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-limpiar:hover {
+    background-color: #E04848;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Más espacio entre los íconos */
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 60px; /* Aumenta el tamaño de los íconos */
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a img {
+    width: 70%;
+    height: 70%;
+    margin: 15%;
+}
+
+.social-links a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+/* Derechos de Autor */
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.copyright span {
+    font-weight: 600;
+    color: #0A3871;
+}
+
+/* Estilo para la sección del tutorial */
+.tutorial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.tutorial-icon {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Oculto por defecto */
+    max-width: 600px;
+}
+
+/* Estilos personalizados para el modal de éxito */
+.swal-title {
+    font-size: 20px;
+    color: #0A3871;
+}
+
+.swal-text {
+    font-size: 16px;
+    color: #333;
+}

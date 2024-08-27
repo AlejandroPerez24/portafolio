@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <img  class="logo" src="img/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <section class="tutorial-section">
+                <img src="img/candadito.png" alt="Tutorial Icon" class="tutorial-icon" onclick="mostrarTutorial()">
+                <div class="tutorial-text" id="tutorial-text">
+                    <!-- Este texto se mostrará al hacer clic en la imagen -->
+                </div>
+            </section>
+            
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="botones"> 
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button class="btn-limpiar" onclick="btnLimpiar()" style="display:none;">Limpiar</button>
+
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/alejandroqperez/" target="_blank">
+                <img src="img/linkend.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/AlejandroPerez24" target="_blank">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; 2024. Todos los derechos reservados. Elaborado por <span>Alejandro Quiñonez Perez</span>.
+        </div>
+    </footer>
+<script src="/script.js"></script>
+</body>
+</html>
